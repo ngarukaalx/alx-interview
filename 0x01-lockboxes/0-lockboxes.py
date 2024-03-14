@@ -13,7 +13,7 @@ def canUnlockAll(boxes):
 
     n = len(boxes)
     checked = [False] * n
-    stack = [0]
+    stack = list(range(n))
 
     while stack:
         box = stack.pop()
