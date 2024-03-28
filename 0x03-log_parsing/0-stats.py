@@ -26,6 +26,7 @@ status_codes = {
 try:
     for line in sys.stdin:
         match = re.match(pattern, line)
+        after_ten += 1
         # if their is match process the line
         if match:
             filesize = match.group(4)
@@ -34,7 +35,7 @@ try:
             if status_code in status_codes:
                 status_codes[status_code] += 1
             sorted_codes = sorted(status_codes.keys())
-            after_ten += 1
+            # after_ten += 1
             if after_ten == 10:
                 after_ten = 0
                 # ip_addr = match.group(1)
