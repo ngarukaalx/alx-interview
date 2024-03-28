@@ -41,7 +41,6 @@ try:
                 # ip_addr = match.group(1)
                 # date = match.group(2)
                 status_code = match.group(3)
-                total_filesize = total_filesize - int(filesize)
                 print("File size: {}".format(total_filesize))
                 for code in sorted_codes:
                     if status_codes[code] != 0:
