@@ -97,5 +97,5 @@ def nqueens():
 
 
 if __name__ == "__main__":
-    """driver"""
+    """driver fuction to run the code"""
     nqueens()
