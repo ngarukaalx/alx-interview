@@ -5,8 +5,8 @@ import sys
 
 def fine(row, col, slash, backslash, rowcheck, slashcheck, backslash_check):
     """check if is safe to place a queen"""
-    if (slashcheck[slash[row][col]]
-            or backslash_check[backslash[row][col]] or rowcheck[row]):
+    if (slashcheck[slash[row][col]] or
+            backslash_check[backslash[row][col]] or rowcheck[row]):
         return False
     return True
 
