@@ -14,6 +14,9 @@ def island_perimeter(grid):
     num_rows = len(grid)
     num_cols = len(grid[0])
 
+    if num_rows > 100 or num_cols > 100:
+        return
+
     # initialize perimeter to zero
     perimeter = 0
 
