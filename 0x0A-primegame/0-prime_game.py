@@ -19,6 +19,10 @@ def isWinner(x, nums):
     You can assume n and x will not be larger than 10000
     You cannot import any packages in this task
     """
+
+    if x or nums is None:
+        return None
+
     current_list = []
     maria = 0
     ben = 0
