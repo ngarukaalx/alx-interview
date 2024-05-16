@@ -20,9 +20,6 @@ def isWinner(x, nums):
     You cannot import any packages in this task
     """
 
-    if x or nums is None:
-        return None
-
     current_list = []
     maria = 0
     ben = 0
